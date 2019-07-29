@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  springboot-docker-compose-oracle-jdk-container:
+    image: springboot-docker-compose-oracle-jdk-app:1
+    build:
+      context: ./
+      dockerfile: Dockerfile.OracleJdk
+    volumes:
+      - /data/springboot-docker-compose-app

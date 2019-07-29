@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  springboot-docker-compose-open-jdk-container:
+    image: springboot-docker-compose-open-jdk-app:1
+    build:
+      context: ./
+      dockerfile: Dockerfile.OpenJdk
+    volumes:
+      - /data/springboot-docker-compose-app
